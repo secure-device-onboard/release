@@ -1,43 +1,32 @@
 v1.10.0
 
 ### New features
-**all-in-one-demo**:  
-- Implements REST endpoint to get additional information (serial number, UUID, timestamp for Device Initialization) about device.  
-- Added new unit-tests, improved exception handling and updated input validation.  
-- Migrated to use Ubuntu 20.04.  
 
-
-
-**client-sdk**: Unit-tests are added.  
-**client-sdk**: A guide has been provided to port client-sdk to new platforms.  
-**iot-platform-sdk**: On-Die ECDSA device attestation support is added.  
-**iot-platform-sdk**: Resale protocol support is added in OCS-OPS REST contracts.  
-**pri**: On-Die ECDSA device attestation support is added.  
-**rendezvous-service**: The build system is migrated to use Maven* and the code is built using Java* 11. The binary packaging has been changed to WAR format.  
-**rendezvous-service**: On-Die ECDSA device attestation support is added.  
-**supply-chain-tools**: On-Die ECDSA device attestation support is added.  
+**all-in-one-demo**, **client-sdk**, **iot-platform-sdk**, **pri**, **rendezvous-service**, **supply-chain-tools**: The primary supported OS has been moved from Ubuntu 18.04 to Ubuntu 20.04.  
+**all-in-one-demo**: Implemented REST endpoint to get additional information (serial number, UUID, timestamp for Device Initialization) about device.  
+**all-in-one-demo**: Added new unit-tests, improved exception handling and updated input validation.  
+**rendezvous-service**: The use of whitelist/blacklist is deprecated in favour of allowlist/denylist.  
 
 ### Changes to existing features
 
-**iot-platform-sdk**: Application properties are moved to Docker* .env files.  
-**iot-platform-sdk**: [Guidelines](https://secure-device-onboard.github.io/docs/latest/iot-platform-sdk/running-the-demo/#setting-up-serviceinfo-transfer) have been added for updating ServiceInfo configuration files in iot-platform-sdk. Not following the guidelines might result in failure to onboard the device.  
-**rendezvous-service**: The hashes for the test keys are auto-populated into the allow-list in example Redis DB Docker instance.
-**supply-chain-tools**: Application properties are moved to Docker* .env files.  
-**supply-chain-tools**: Owner public keys (RSA2048, ECDSA P-256 and ECDSA P-384) are grouped together. During Ownership Voucher extension, appropriate public key is picked up based on the type of Manufacturer key.  
+**iot-platform-sdk**, **pri**, **rendezvous-service**: Added check for known AppID to ensure only known TEE based clients can be used to onboard a device.  
 
 ### Discontinued features
 
+None  
 
 ### Fixed Issues
 
 **client-sdk**: TPM2 TSS Engine version has been updated to 1.1.0 to fix build issue.  
+**client-sdk**: The build was failing on Ubuntu 20.04 when MODULES=true option was selected because of incorrect macro expansion. It was not observed on Ubuntu 18.04.  
 **iot-platform-sdk**: HTTP version was forced to 1.1 to fix access issue with Sandbox RV while executing in open network.  
 **pri**: HTTP version was forced to 1.1 to fix access issue with Sandbox RV while executing in open network.  
+**rendezvous-service**: Enhanced logic to parse proxy information from environment variable. This information is used by the Docker scripts during runtime execution.  
+**supply-chain-tools**: Fixed the incorrect UUID value in the database against ownership voucher entry.  
 
 ### Known Issues
-**pri**: A problem was discovered after release in which the PRI TO0Client and Device implementations are not able to complete TO0/TO1 operations against hosted Rendezvous service if they were executed in an open network (not behind a proxy). See this [Github issue](https://github.com/secure-device-onboard/pri/issues/45) for details. This issue will be fixed in SDO 1.9.1.  
-**iot-platform-sdk**: The HTTP client implementation in the IOT platform SDK was updated in release 1.9 to match the implementation in PRI. Because of this change, [the issue](https://github.com/secure-device-onboard/pri/issues/45) reported above also impacts the IOT Platform SDK in release 1.9, but doesn’t affect it in release 1.8. This issue will be fixed in SDO 1.9.1.  
-**client-sdk**: A problem was discovered after release in which the link to the TPM2_TSS_ENGINE component used by the Client SDK to build with TPM support no longer exists. See this [Github issue](https://github.com/secure-device-onboard/client-sdk/issues/64) for details. This issue will be fixed in SDO 1.9.1.  
+
+None  
 
 ### Supported hardware platforms
 
