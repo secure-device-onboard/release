@@ -18,7 +18,7 @@ None
 ### Fixed Issues
 
 **client-sdk**: TPM2 TSS Engine version has been updated to 1.1.0 to fix build issue.  
-**client-sdk**: Fix build issue when MODULES=true option was selected. It was only observed on Ubuntu 20.04.  
+**client-sdk**: Fixed build issue when MODULES=true option was selected. It was only observed on Ubuntu 20.04.  
 **iot-platform-sdk**, **pri**: HTTP version was forced to 1.1 to fix access issue with Sandbox RV while executing in open network.  
 **rendezvous-service**: Enhanced logic to parse proxy information from environment variable. This information is used by the Docker scripts during runtime execution.  
 **supply-chain-tools**: Fixed the incorrect UUID value in the database against ownership voucher entry.  
