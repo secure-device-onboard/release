@@ -2,9 +2,8 @@ v1.10.3
 
 ### Fixed Issues
 
-**client-sdk**: Fixed possible buffer overflow issue while parsing proxy information.  
 **all-in-one-demo**, **iot-platform-sdk**, **pri**, **rendezvous-service**, **supply-chain-tools**: The version of third-party dependencies have been updated to resolve some of the security vulnerabilities.  
-**client-sdk**: There are no changes. Please refer to 1.10.2 release artifacts  
+**client-sdk**: There are no changes from previous release.   
 
 
 ### SHA256 checksum for release binaries
