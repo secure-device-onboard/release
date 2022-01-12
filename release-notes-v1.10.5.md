@@ -10,13 +10,14 @@ v1.10.5
 
 *Following SHA256 checksum is calculated using sha256sum tool*  
 ```
-22ef2de4166b0286ba9c4ab207a37583e00929a721ab57f4bba749088ca03dbd  all-in-one-demo-v1.10.4.tar.gz
-976fd2e40b1de54189f2eed91b988b99dab3d11b27435d9bfb9640a3cbdeadef  client-sdk-v1.10.4.tar.gz
-0d68f81469e72ca102ef8fc4d9617cdae707746e4110a2c10b16d618162bb229  iot-platform-sdk-v1.10.4.tar.gz
-dd7fa3e673dac5e1c53630b019a3a78604ad6a13f9db816450a0df1a7587e6d0  pri-v1.10.4.tar.gz
-16351660544d8bda45ec8d820df1e88c1aeec037fb57e19bf17de264a5c77a43  rendezvous-service-v1.10.4.tar.gz
-6a72bf625dbe408d3a9381016de5f1046257ae111091e39adcb3dd46ee7d7868  supply-chain-tools-v1.10.4.tar.gz
-59c1b5f7b70a9d316252254f668a093e9a77fd62f0aeab4dd97edde13c6a8b83  NOTICES-v1.10.4.tar.gz
+b6deaca1f80c168965fd11c23c660e76119b2b7f414f83579359a7c03acc2a3c all-in-one-demo-v1.10.5.tar.gz
+4dbd261d98a8d7ec9df282f8787925cf849b8e09456a01f05312b183f97a5163 client-sdk-v1.10.5.tar.gz
+fb61298345e51431ebb11f59b43318f1515c24c16c44177a2cf606e2528b09c5 iot-platform-sdk-v1.10.5.tar.gz
+965440fe31e6485e330b57121478bb618f5b238e6f48da9df347f2147118239f pri-v1.10.5.tar.gz
+08fc9d6ef8e6328725fd2ec765bb05af736ba89731bec3ce7a33c28ecf620716 rendezvous-service-v1.10.5.tar.gz
+dc1d414160ffe62735ddccd9f8fae543f1650a680bd36fd903b292a875e56300 supply-chain-tools-v1.10.5.tar.gz
+b4a8c45fef072d59093c15a45fa06fc02d630de119150035e42417f76d233c8e NOTICES-v1.10.5.tar.gz
+
 ```
 
 
