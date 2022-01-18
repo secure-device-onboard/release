@@ -2,15 +2,15 @@ v1.10.5
 
 ### Fixed Issues
 
-**iot-platform-sdk**, **pri**, **rendezvous-service**, **supply-chain-tools**: The version of third-party dependencies have been updated to resolve [CVE-2021-44832](https://nvd.nist.gov/vuln/detail/CVE-2021-44832) vulnerability.  
+**all-in-one-demo**, **iot-platform-sdk**, **pri**, **rendezvous-service**, **supply-chain-tools**: The version of third-party dependencies have been updated to resolve [CVE-2021-44832](https://nvd.nist.gov/vuln/detail/CVE-2021-44832) vulnerability.
 **client-sdk**: There are no changes from previous release.   
-**all-in-one-demo**:Currently being updated for 1.10.5 release. Will be published soon.
 
 ### SHA256 checksum for release binaries
 
 *Following SHA256 checksum is calculated using sha256sum tool*  
 ```
 
+8b7f4cb94faed258dca9b1390a7ce21e59d92737827d66d3655fd0bfa37d7bb5 all-in-one-demo-v1.10.5.tar.gz
 4dbd261d98a8d7ec9df282f8787925cf849b8e09456a01f05312b183f97a5163 client-sdk-v1.10.5.tar.gz
 fb61298345e51431ebb11f59b43318f1515c24c16c44177a2cf606e2528b09c5 iot-platform-sdk-v1.10.5.tar.gz
 965440fe31e6485e330b57121478bb618f5b238e6f48da9df347f2147118239f pri-v1.10.5.tar.gz
