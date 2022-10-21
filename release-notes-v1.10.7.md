@@ -3,6 +3,7 @@ v1.10.7
 ### Fixed Issues
 
 **all-in-one-demo**,**iot-platform-sdk**, **pri**, **rendezvous-service**, **supply-chain-tools**: The version of third-party dependencies have been updated to resolve security vulnerabilities.
+
 **client-sdk**: Changes to update OpenSSL version.   
  
 
